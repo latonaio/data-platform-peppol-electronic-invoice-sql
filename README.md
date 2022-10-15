@@ -1,6 +1,6 @@
 # peppol-electronic-invoice-sql
 
-peppol-electronic-invoice-sql　は、Peppol における電子インボイスデータを保存する SQL テーブルを作成するためのレポジトリです。  
+peppol-electronic-invoice-sql　は、Peppol における電子インボイスデータを維持管理する SQL テーブルを作成するためのレポジトリです。  
 
 ## peppolとは
 
@@ -20,8 +20,8 @@ peppol-electronic-invoice-sql には、sql の設定ファイルとして以下�
 
 * peppol-electronic-invoice-sql-header-data.sql（Peppol 電子インボイス - ヘッダデータ）
 * peppol-electronic-invoice-sql-header-partner-data.sql（Peppol 電子インボイス - ヘッダ取引先データ）
-* peppol-electronic-invoice-sql-header-partner-address-data.sql（Peppol 電子インボイス - ヘッダ取引先住所データ）
 * peppol-electronic-invoice-sql-item-data.sql（Peppol 電子インボイス - 明細データ）
+* peppol-electronic-invoice-sql-item-partner-data.sql（Peppol 電子インボイス - 明細取引先データ）
 
 ## パートナーファンクション
 
@@ -30,10 +30,10 @@ peppol-electronic-invoice-sql では、パートナーファンクションに�
 
 peppol-electronic-invoice-sql におけるパートナーファンクションは、2桁のコードで例示され、  
 
-* ID および ProfileID / 請求主体 : IV
-* AccountingCustomerParty / 請求先 : BP
+* ID / 請求主体 : IV
+* AccountingCustomerParty / 請求先 : BL
 * AccountingSupplierParty / 仕入先 : SP
-* Payee / 支払人 : PY
+* Payee / 受取人 : RV
 
 となっています。  
 （上記は例であり、用途に応じて任意のパートナーファンクションを定義してください）
