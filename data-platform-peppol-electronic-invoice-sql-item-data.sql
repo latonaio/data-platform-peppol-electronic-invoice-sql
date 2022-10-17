@@ -1,4 +1,4 @@
-CREATE TABLE `peppol_electronic_invoice_item_data`
+CREATE TABLE `data_platform_peppol_electronic_invoice_item_data`
 (
     `ID`                                                                         varchar(10) NOT NULL,       -- <cbc> "F012345"
     `InvoiceLineID`                                                              varchar(10) NOT NULL,       -- <cbc/cac:InvoiceLine> "1"
@@ -24,6 +24,6 @@ CREATE TABLE `peppol_electronic_invoice_item_data`
     `InvoiceLinePricePriceAmount`                                                varchar(13) DEFAULT NULL,   -- currencyID="SGD"`<cbc/cac:InvoiceLinePricePrice/cac:InvoiceLine> "90.00"
     `InvoiceLinePriceBaseQuantity`                                 　            varchar(15) DEFAULT NULL,    -- unitCode="H87"<cbc/cac:InvoiceLinePricePrice/cac:InvoiceLine> "1"
     PRIMARY KEY (`ID`, `InvoiceLineID`),
-    CONSTRAINT `PeppolElectronicInvoiceItemData_fk` FOREIGN KEY (`ID`) REFERENCES `peppol_electronic_invoice_header_data` (`ID`)
+    CONSTRAINT `DataPlatformPeppolElectronicInvoiceItemData_fk` FOREIGN KEY (`ID`) REFERENCES `data_platform_peppol_electronic_invoice_header_data` (`ID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

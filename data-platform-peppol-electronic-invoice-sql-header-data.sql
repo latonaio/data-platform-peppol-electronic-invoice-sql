@@ -1,4 +1,4 @@
-CREATE TABLE `peppol_electronic_invoice_header_data`
+CREATE TABLE `data_platform_peppol_electronic_invoice_header_data`
 (
     `ID`                                                                         varchar(10) NOT NULL,      -- <cbc> "F012345"
     `UBLVersionID`                                                               varchar(4) DEFAULT NULL,   -- <cbc> "2.1"

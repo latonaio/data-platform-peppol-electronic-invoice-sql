@@ -1,6 +1,6 @@
-# peppol-electronic-invoice-sql
+# data-platform-peppol-electronic-invoice-sql
 
-peppol-electronic-invoice-sql　は、Peppol における電子インボイスデータを維持管理する SQL テーブルを作成するためのレポジトリです。  
+data-platform-peppol-electronic-invoice-sql　は、データ連携基盤において、Peppol の 電子インボイスデータを維持管理する SQL テーブルを作成するためのレポジトリです。  
 
 ## peppolとは
 
@@ -10,24 +10,25 @@ Peppol（ペポル）とは、請求等にかかる電子文書をネットワ�
 
 ## 前提条件
 
-peppol-electronic-invoice-sql は、データ連携にあたり、API を利用し、本レポジトリ の sql 設定ファイルの内容は、下記 URL の API 仕様を前提としています。
+data-platform-peppol-electronic-invoice-sql は、データ連携にあたり、API を利用し、本レポジトリ の sql 設定ファイルの内容は、下記 URL の API 仕様を前提としています。
 https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview  
 
 ## sql の設定ファイル
 
-peppol-electronic-invoice-sql には、sql の設定ファイルとして以下の sql ファイルが含まれています。
+data-platform-peppol-electronic-invoice-sql には、sql の設定ファイルとして以下の sql ファイルが含まれています。
 
-* peppol-electronic-invoice-sql-header-data.sql（Peppol 電子インボイス - ヘッダデータ）
-* peppol-electronic-invoice-sql-header-partner-data.sql（Peppol 電子インボイス - ヘッダ取引先データ）
-* peppol-electronic-invoice-sql-item-data.sql（Peppol 電子インボイス - 明細データ）
-* peppol-electronic-invoice-sql-item-partner-data.sql（Peppol 電子インボイス - 明細取引先データ）
+* data-platform-peppol-electronic-invoice-sql-header-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダデータ）
+* data-platform-peppol-electronic-invoice-sql-header-partner-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダ取引先データ）
+* data-platform-peppol-electronic-invoice-sql-header-pdf-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダPDFデータ）
+* data-platform-peppol-electronic-invoice-sql-item-data.sql（データ連携基盤 Peppol 電子インボイス - 明細データ）
+* data-platform-peppol-electronic-invoice-sql-item-partner-data.sql（データ連携基盤 Peppol 電子インボイス - 明細取引先データ）
 
 ## パートナーファンクション(取引先機能)
 
-peppol-electronic-invoice-sql では、パートナーファンクション(取引先機能)によって、関係者が分類されています。  
+data-platform-peppol-electronic-invoice-sql では、パートナーファンクション(取引先機能)によって、関係者が分類されています。  
 パートナーファンクションを用いて、Peppolの請求書データに関するパートナーテーブルを定義することにより、Peppolのデータ項目を整理し、データ項目の種類の総量を削減して、より効率的な、Peppolデータフォーマット体系のデータマネジメントを行うことができます。    
 
-peppol-electronic-invoice-sql におけるパートナーファンクションは、2桁のコードで例示され、  
+data-platform-peppol-electronic-invoice-sql におけるパートナーファンクションは、2桁のコードで例示され、  
 
 * TaxRepresentativeParty / 請求主体 : IV
 * AccountingCustomerParty / 請求先 : BL
