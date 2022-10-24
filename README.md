@@ -18,10 +18,11 @@ https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview
 data-platform-peppol-electronic-invoice-sql には、sql の設定ファイルとして以下の sql ファイルが含まれています。
 
 * data-platform-peppol-electronic-invoice-sql-header-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダデータ）
-* data-platform-peppol-electronic-invoice-sql-header-partner-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダ取引先データ）
 * data-platform-peppol-electronic-invoice-sql-header-pdf-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダPDFデータ）
+* data-platform-peppol-electronic-invoice-sql-header-partner-data.sql（データ連携基盤 Peppol 電子インボイス - ヘッダ取引先データ）
 * data-platform-peppol-electronic-invoice-sql-item-data.sql（データ連携基盤 Peppol 電子インボイス - 明細データ）
 * data-platform-peppol-electronic-invoice-sql-item-partner-data.sql（データ連携基盤 Peppol 電子インボイス - 明細取引先データ）
+* data-platform-peppol-electronic-invoice-sql-address-data.sql（データ連携基盤 Peppol 電子インボイス - 住所データ）
 
 ## パートナーファンクション(取引先機能)
 
